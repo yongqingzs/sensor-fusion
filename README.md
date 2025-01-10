@@ -45,6 +45,29 @@ Additional:
   * [uWebSocketIO](https://github.com/uWebSockets/uWebSockets) with commit hash e94b6e1
   * [Udacity Self-Driving Car Engineer Nanodegree Term 2 Simulator](https://github.com/udacity/self-driving-car-sim/releases)
 
+* uWebSocketIO安装:
+```bash
+git clone https://github.com/uNetworking/uWebSockets.git
+cd uWebSockets
+git checkout e94b6e1
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+# NOTE: 安装好后将libuWS.so从/usr/lib64移动到/usr/lib
+mv /usr/lib64/libuWS.so /usr/lib/libuWS.so 
+```
+
+* Udacity Self-Driving Car Engineer Nanodegree Term 2 Simulator安装:
+```bash
+wget https://github.com/udacity/self-driving-car-sim/releases/download/v1.45/term2_sim_linux.zip
+unzip term2_sim_linux.zip
+cd term2_sim_linux
+chmod +x term2_sim.x86_64
+./term2_sim.x86_64
+```
+
 
 ## Build
 The project can be built by doing the following from the project top directory.  

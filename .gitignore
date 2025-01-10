@@ -35,3 +35,7 @@
 cmake-build-debug/
 .idea/workspace.xml
 
+/build
+.vscode
+/term2_sim_linux
+term2_sim_linux.zip
